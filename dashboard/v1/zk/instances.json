@@ -1,0 +1,22 @@
+[ {
+  "name" : "my-zk",
+  "host" : "localhost",
+  "port" : 2181,
+  "proxyList" : [ {
+    "proxyType" : null,
+    "sshProxy" : {
+      "username" : "sh",
+      "host" : "localhost",
+      "port" : 2183,
+      "password" : "Huawei@12"
+    },
+    "kubernetesExecProxy" : null
+  } ],
+  "script" : "/opt/sh/zookeeper/bin/zkCli.sh"
+}, {
+  "name" : "",
+  "host" : "localhost",
+  "port" : 2181,
+  "proxyList" : [ ],
+  "script" : "./zkCli.sh"
+} ]
